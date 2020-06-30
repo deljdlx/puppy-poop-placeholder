@@ -16,9 +16,11 @@ sudo apt-get install -y imagemagick
 ### Wordpress
 Install wordpress
 
+
+
 #### (lazy mode) You can use this script
 Don't forget to change copnfigration variables
-```php
+```sh
 #======================================================================
 #CONFIGURATION
 
@@ -60,6 +62,16 @@ php -r "file_put_contents('wp-config.php', str_replace('put your unique phrase h
 php -r "file_put_contents('wp-config.php', 'define( \'FS_METHOD\', \'direct\');', FILE_APPEND);";
 
 ```
+
+
+### Configure api URL (config.php)
+```php
+<?php
+$apiURL = 'http://ppp.jlb.ninja/wordpress/wp-json/wp/v2';
+```
+
+
+
 # Usage
 
 # Todo
